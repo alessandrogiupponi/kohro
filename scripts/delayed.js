@@ -1,5 +1,5 @@
 // add delayed functionality here
 
-import { Glide } from '@glidejs/glide.js';
+import Glide from '@glidejs/glide';
 
 new Glide('.glide').mount();
