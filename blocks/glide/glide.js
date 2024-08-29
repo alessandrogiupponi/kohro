@@ -44,7 +44,7 @@ export default async function decorate(block) {
   arrows.append(next);
   block.append(arrows);
 
-  new Glide(`glide-${glideId}`, {
+  new Glide(`#glide-${glideId}`, {
     rewindDuration: 0,
   }).mount();
 }
