@@ -1,3 +1,8 @@
+.article-wrapper {
+    margin-left: 25%;
+    width: 50%;
+}
+
 .article h2 {
   font-family: trade-gothic-bold;
   letter-spacing: 0.2em;
