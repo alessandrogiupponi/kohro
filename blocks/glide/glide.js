@@ -23,12 +23,7 @@ export default async function decorate(block) {
 
   track.append(slides);
   block.append(track);
-
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-  </div>
-
+  
   const arrows = document.createElement('div');
   arrows.classList.add('glide__arrows');
   arrows.dataset.glideEl = 'controls';
