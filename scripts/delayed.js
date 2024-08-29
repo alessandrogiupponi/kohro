@@ -2,4 +2,6 @@
 
 import Glide from "@glidejs/glide";
 
-new Glide('.glide').mount();
+new Glide('.glide', {
+  rewindDuration: 0,
+}).mount();
