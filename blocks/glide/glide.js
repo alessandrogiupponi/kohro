@@ -16,7 +16,6 @@ export default async function decorate(block) {
   
   rows.forEach((row, idx) => {
     const slide = document.createElement('li');
-    slide.style.width = '33.333333%';
     slide.classList.add('glide__slide');
     slide.append(row.querySelector('div'));
     slides.append(slide);
