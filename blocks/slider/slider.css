@@ -1,13 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #333;
+.slider-wrapper {
+    max-width: 100% !important;
 }
 
 .slider {
-  border: 1px solid red;
+    position: relative;
   overflow: hidden;
 }
 
@@ -18,7 +14,6 @@ body {
   transform: scale(0.9);
   background-color: #fff;
   text-align: center;
-  font: 700 82px/300px sans-serif;
   /* transition: 0.2s ease-in; */
 }
 
@@ -29,7 +24,35 @@ body {
 }
 
 .slider-item.active {
-  background-color: red;
+    transform: scale(1.05);
+}
+
+.slider > button {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 9px 12px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 4px;
+    box-shadow: 0 .25em .5em 0 rgba(0, 0, 0, .1);
+    text-shadow: 0 .25em .5em rgba(0, 0, 0, .1);
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+
+.slider .next {
+    right: 2em;
+}
+
+.slider .prev {
+    left: 2em;
 }
 
 @media all and (max-width: 480px) {

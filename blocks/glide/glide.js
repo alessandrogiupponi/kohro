@@ -1,5 +1,3 @@
-import { fetchPlaceholders } from '../../scripts/aem.js';
-
 let glideId = 0;
 export default async function decorate(block) {
   glideId += 1;
@@ -10,12 +8,9 @@ export default async function decorate(block) {
 
   const slides = document.createElement('ul');
   slides.classList.add('glide__slides');
-  
   const rows = block.querySelectorAll(':scope > div');
-  
-  rows.forEach((row, idx) => {
+  rows.forEach((row) => {
     const slide = document.createElement('li');
-    slide.style.width = '50%';
     slide.classList.add('glide__slide');
     slide.append(row.querySelector('div'));
     slides.append(slide);
@@ -24,18 +19,15 @@ export default async function decorate(block) {
 
   track.append(slides);
   block.append(track);
-  
   const arrows = document.createElement('div');
   arrows.classList.add('glide__arrows');
   arrows.dataset.glideEl = 'controls';
-  
   const prev = document.createElement('button');
   prev.classList.add('glide__arrow');
   prev.classList.add('glide__arrow--left');
   prev.dataset.glideDir = '<';
   prev.innerHTML = '<';
   arrows.append(prev);
-  
   const next = document.createElement('button');
   next.classList.add('glide__arrow');
   next.classList.add('glide__arrow--right');
@@ -43,6 +35,4 @@ export default async function decorate(block) {
   next.innerHTML = '>';
   arrows.append(next);
   block.append(arrows);
-
-  
 }
