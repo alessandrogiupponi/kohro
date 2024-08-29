@@ -39,3 +39,8 @@
   font-family: trade-gothic-roman;
   src: url('../fonts/trade-gothic-roman.woff');
 }
+
+@font-face {
+    font-family: trade-gothic-bold;
+    src: url('../fonts/trade-gothic-bold.woff');
+}
