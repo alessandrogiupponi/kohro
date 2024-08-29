@@ -1,9 +1,10 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
+import Glide from "@glidejs/glide";
 
 let glideId = 0;
 export default async function decorate(block) {
   glideId += 1;
-  block.setAttribute('id', `carousel-${glideId}`);
+  block.setAttribute('id', `glide-${glideId}`);
   const track = document.createElement('div');
   track.classList.add('glide__track');
   track.dataset.glideEl = 'track';
@@ -43,5 +44,8 @@ export default async function decorate(block) {
   next.innerHTML = '>';
   arrows.append(next);
   block.append(arrows);
-  
+
+  new Glide(`glide-${glideId}`, {
+    rewindDuration: 0,
+  }).mount();
 }
