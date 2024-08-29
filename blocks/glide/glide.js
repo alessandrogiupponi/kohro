@@ -1,5 +1,4 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
-import Glide from "@glidejs/glide";
 
 let glideId = 0;
 export default async function decorate(block) {
@@ -45,7 +44,5 @@ export default async function decorate(block) {
   arrows.append(next);
   block.append(arrows);
 
-  new Glide('.glide', {
-    rewindDuration: 0,
-  }).mount();
+  
 }
