@@ -16,7 +16,6 @@ export default async function decorate(block) {
   
   rows.forEach((row, idx) => {
     const slide = document.createElement('li');
-    slide.style.width = '100%';
     slide.classList.add('glide__slide');
     slide.append(row.querySelector('div'));
     slides.append(slide);
@@ -45,7 +44,7 @@ export default async function decorate(block) {
   arrows.append(next);
   block.append(arrows);
 
-  new Glide(`#glide-${glideId}`, {
+  new Glide('.glide', {
     rewindDuration: 0,
   }).mount();
 }
