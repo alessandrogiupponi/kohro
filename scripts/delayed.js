@@ -1,5 +1,5 @@
 // add delayed functionality here
 
-import Glide from '@glidejs/glide';
+import * as Glide from "@glidejs/glide";
 
-new Glide('.glide').mount();
+new Glide.default(".glide").mount();
