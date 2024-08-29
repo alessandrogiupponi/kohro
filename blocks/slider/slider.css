@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+.slider {
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.slider-item {
+  /* width: 500px; */
+  height: 300px;
+  flex: 0 0 500px;
+  transform: scale(0.9);
+  background-color: #fff;
+  text-align: center;
+  font: 700 82px/300px sans-serif;
+  /* transition: 0.2s ease-in; */
+}
+
+.slider-box {
+  display: flex;
+  padding: 20px 0;
+  transition: all 0.4s ease-in 0s;
+}
+
+.slider-item.active {
+  background-color: red;
+}
+
+@media all and (max-width: 480px) {
+  .slider-item {
+    font-size: 60px;
+    flex-basis: 300px;
+  }
+}
