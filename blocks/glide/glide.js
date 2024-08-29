@@ -32,12 +32,14 @@ export default async function decorate(block) {
   prev.classList.add('glide__arrow');
   prev.classList.add('glide__arrow--left');
   prev.dataset.glideDir = '<';
+  prev.innerHTML = '<';
   arrows.append(prev);
   
   const next = document.createElement('button');
   next.classList.add('glide__arrow');
   next.classList.add('glide__arrow--right');
   next.dataset.glideDir = '>';
+  next.innerHTML = '>';
   arrows.append(next);
   block.append(arrows);
   
