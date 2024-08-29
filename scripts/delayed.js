@@ -1,5 +1,5 @@
 // add delayed functionality here
 
-import Glide from '@glidejs/glide/dist/glide.modular.esm';
+import Glide from '@glidejs/glide';
 
 new Glide('.glide').mount();
