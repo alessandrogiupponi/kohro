@@ -1,0 +1,19 @@
+.article h2 {
+  font-family: trade-gothic-bold;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  clear: both;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.article p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+  font-family: 'trade-gothic-roman', sans-serif;
+  margin-bottom: 1.5em;
+}
