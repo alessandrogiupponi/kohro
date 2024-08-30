@@ -71,13 +71,13 @@
 }
 
 body {
-  display: none;
-  margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+    display: none;
+    margin: 0;
+    background-color: var(--background-color);
+    color: #404040;
+    font-family: 'trade-gothic-roman', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
 
 body.appear {

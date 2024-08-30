@@ -3,10 +3,16 @@
     width: 50%;
 }
 
+.article h3.k-icon {
+    font-family: trade-gothic-roman;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
 .article h2 {
   font-family: trade-gothic-bold;
   letter-spacing: 0.2em;
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
   clear: both;
   font-weight: 500;
@@ -19,6 +25,20 @@
   font-weight: 300;
   line-height: 1.7em;
   color: #999;
-  font-family: 'trade-gothic-roman', sans-serif;
   margin-bottom: 1.5em;
+}
+
+.article .k-icon:before {
+    background: url(../../icons/kohro-o.svg) no-repeat;
+    background-size: 18px 18px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    content: "";
+    padding-right: 30px;
+    margin-bottom: -3px;
+}
+
+.article h3 span {
+    padding-right: 1em;
 }

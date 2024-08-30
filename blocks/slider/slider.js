@@ -130,9 +130,11 @@ export default async function decorate(block) {
   };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(() => {
-      slideWidth = sliderItems[0].offsetWidth;
-      sliderWidth = slider.offsetWidth;
-      renderSlider();
+      if (sliderItems[0]) {
+        slideWidth = sliderItems[0].offsetWidth;
+        sliderWidth = slider.offsetWidth;
+        renderSlider();
+      }
     });
   }, options);
 
